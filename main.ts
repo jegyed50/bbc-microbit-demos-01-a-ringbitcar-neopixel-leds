@@ -12,7 +12,7 @@ input.onButtonPressed(Button.A, function () {
     strip.clear()
     strip.show()
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 3; index++) {
         strip.clear()
         basic.pause(1000)
@@ -25,16 +25,6 @@ input.onButtonPressed(Button.AB, function () {
     basic.pause(2000)
     strip.clear()
     strip.show()
-})
-input.onButtonPressed(Button.B, function () {
-    strip.clear()
-    strip.showColor(neopixel.colors(NeoPixelColors.Red))
-    basic.pause(500)
-    strip.show()
-    basic.pause(500)
-    strip.clear()
-    strip.show()
-    basic.pause(500)
 })
 let strip: neopixel.Strip = null
 led.setBrightness(125)
